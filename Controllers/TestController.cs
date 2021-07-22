@@ -28,5 +28,11 @@ namespace ParsePDF.Controllers
         {
             return new Random().Next();
         }
+
+        [HttpGet(nameof(PrintTime))]
+        public IActionResult PrintTime()
+        {
+            return Ok($"{DateTime.Now:yyyy:MM:dd HH:mm:ss}");
+        }
     }
 }
