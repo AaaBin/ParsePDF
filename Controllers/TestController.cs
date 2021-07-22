@@ -22,5 +22,17 @@ namespace ParsePDF.Controllers
             await Task.Delay(TimeSpan.FromSeconds(2));
             return Ok($"GoodBye {name}~~~");
         }
+
+        [HttpGet(nameof(GetRandomNum))]
+        public int GetRandomNum()
+        {
+            return new Random().Next();
+        }
+
+        [HttpGet(nameof(PrintTime))]
+        public IActionResult PrintTime()
+        {
+            return Ok($"{DateTime.Now:yyyy:MM:dd HH:mm:ss}");
+        }
     }
 }
