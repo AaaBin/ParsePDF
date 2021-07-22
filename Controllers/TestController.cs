@@ -12,7 +12,7 @@ namespace ParsePDF.Controllers
         public async Task<IActionResult> SayHELLO()
         {
             await Task.Delay(TimeSpan.FromSeconds(5));
-            return Ok("HELLO");
+            return Ok("HELLO~~~");
         }
     }
 }
