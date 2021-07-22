@@ -14,5 +14,13 @@ namespace ParsePDF.Controllers
             await Task.Delay(TimeSpan.FromSeconds(5));
             return Ok("HELLO~~~");
         }
+
+
+        [HttpGet(nameof(SayGoodBye))]
+        public async Task<IActionResult> SayGoodBye(string name)
+        {
+            await Task.Delay(TimeSpan.FromSeconds(2));
+            return Ok($"GoodBye {name}~~~");
+        }
     }
 }
