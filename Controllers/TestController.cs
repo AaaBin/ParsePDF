@@ -17,10 +17,10 @@ namespace ParsePDF.Controllers
 
 
         [HttpGet(nameof(SayGoodBye))]
-        public async Task<IActionResult> SayGoodBye(string name)
+        public async Task<IActionResult> SayGoodBye()
         {
             await Task.Delay(TimeSpan.FromSeconds(2));
-            return Ok($"GoodBye {name}~~~");
+            return Ok($"GoodBye~~~");
         }
 
         [HttpGet(nameof(GetRandomNum))]
