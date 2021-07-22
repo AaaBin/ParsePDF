@@ -22,5 +22,12 @@ namespace ParsePDF.Controllers
             await Task.Delay(TimeSpan.FromSeconds(2));
             return Ok($"GoodBye {name}~~~");
         }
+
+
+        [HttpGet(nameof(PrintTime))]
+        public IActionResult PrintTime()
+        {
+            return Ok($"{DateTime.Now:yyyy:HH:mm}");
+        }
     }
 }
