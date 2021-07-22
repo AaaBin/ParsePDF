@@ -14,5 +14,25 @@ namespace ParsePDF.Controllers
             await Task.Delay(TimeSpan.FromSeconds(5));
             return Ok("HELLO~~~");
         }
+
+
+        [HttpGet(nameof(SayGoodBye))]
+        public async Task<IActionResult> SayGoodBye()
+        {
+            await Task.Delay(TimeSpan.FromSeconds(2));
+            return Ok($"GoodBye~~~");
+        }
+
+        [HttpGet(nameof(GetRandomNum))]
+        public int GetRandomNum()
+        {
+            return new Random().Next();
+        }
+
+        [HttpGet(nameof(PrintTime))]
+        public IActionResult PrintTime()
+        {
+            return Ok($"{DateTime.Now:yyyy:MM:dd HH:mm:ss}");
+        }
     }
 }
