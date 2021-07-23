@@ -46,5 +46,11 @@ namespace ParsePDF.Controllers
         {
             return Ok("ABCD");
         }
+
+        [HttpGet(nameof(SayEnglish))]
+        public IActionResult SayEnglish()
+        {
+            return Ok("This is a book.");
+        }
     }
 }
