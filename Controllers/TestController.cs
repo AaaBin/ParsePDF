@@ -52,5 +52,11 @@ namespace ParsePDF.Controllers
         {
             return Ok("This is a book.");
         }
+
+        [HttpGet(nameof(TEST07))]
+        public IActionResult TEST07()
+        {
+            return Ok("TEST07");
+        }
     }
 }
