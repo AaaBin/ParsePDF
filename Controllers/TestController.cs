@@ -35,10 +35,10 @@ namespace ParsePDF.Controllers
             return Ok($"{DateTime.Now:yyyy:MM:dd HH:mm:ss}");
         }
 
-        [HttpPost(nameof(PostNothing))]
-        public IActionResult PostNothing(string name)
+        [HttpPost(nameof(PostOneThing))]
+        public IActionResult PostOneThing(string name)
         {
-            return Ok("Nothing");
+            return Ok("OneThing");
         }
 
         [HttpPost(nameof(PostABCD))]
