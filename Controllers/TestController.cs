@@ -37,9 +37,9 @@ namespace ParsePDF.Controllers
 
 
         [HttpPost(nameof(PostABC))]
-        public IActionResult PostABC()
+        public IActionResult PostABCD()
         {
-            return Ok("ABC");
+            return Ok("ABCD");
         }
     }
 }
