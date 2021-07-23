@@ -34,5 +34,12 @@ namespace ParsePDF.Controllers
         {
             return Ok($"{DateTime.Now:yyyy:MM:dd HH:mm:ss}");
         }
+
+
+        [HttpPost(nameof(PostABC))]
+        public IActionResult PostABCD()
+        {
+            return Ok("ABCD");
+        }
     }
 }
